@@ -15,7 +15,7 @@ A clean, modern Flutter mobile app for Android and iOS that displays current wea
 
 ## Getting Started
 
-git clone
+git clone https://github.com/Dmwinzi/city_weather
 cd city_weather
 flutter pub get
 flutter run
