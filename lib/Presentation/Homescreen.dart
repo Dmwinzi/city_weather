@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:city_weather/Presentation/Widgets/Citysearch.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
@@ -224,29 +225,21 @@ class _HomescreenState extends State<Homescreen> {
       ),
       builder: (context) {
         return FractionallySizedBox(
-          heightFactor: 0.3,
-          child: ListView.builder(
-            itemCount: _cities.length,
-            itemBuilder: (context, index) {
-              return ListTile(
-                leading: const Icon(Icons.place, color: Colors.white),
-                title: Text(
-                  _cities[index],
-                  style: const TextStyle(color: Colors.white),
-                ),
-                onTap: () {
-                  setState(() {
-                    _selectedCity = _cities[index];
-                  });
-                  Navigator.pop(context);
-                },
-              );
-            },
-          ),
+            heightFactor: 0.4,
+           child: CitySearchSheet(
+             cities: _cities,
+             onCitySelected: (selectedCity) {
+               setState(() {
+                 _selectedCity = selectedCity;
+               });
+               Navigator.pop(context);
+             },
+           ),
         );
       },
     );
   }
+
 
 
 }
