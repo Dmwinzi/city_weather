@@ -40,6 +40,18 @@ dependencies:
   get_it: ^8.0.3
   intl: ^0.18.1
   lottie: ^3.2.0
+  country_state_city_pro: ^0.0.6
+  pretty_dio_logger: ^1.4.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.13
+  connectivity_plus: ^4.0.2
+  mockito: ^5.4.4
+  path_provider: ^2.0.15
+  get: ^4.7.2
+
+
 
 dev_dependencies:
   flutter_test:
@@ -70,6 +82,7 @@ flutter:
     - assets/images/rainy.json
     - assets/images/cloudy.json
     - assets/images/windy.json
+    - .env
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
